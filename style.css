@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(221, 221, 221);
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* navegacao */
+nav a{
+    color: #fff;
+    padding: 15px;
+    margin-left: 15px;
+}
+a.ativo {
+    color: #4CAF50;
+}
+
+#logo a{
+    color: wheat;
+    font-size: 2em;
+}
+/* fim nav superior */
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse; /* O valor inverte a imagem com o aside */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+.a{/* aqui estou dividindo a tela em .a 60% / .b 40% */
+    width: 60%;
+}
+    main img{
+        max-width: 700px;
+    }
+
+.b{
+    width: 40%;
+}    
+    aside{
+        text-align: center;
+        /* color: #fff; */
+    }
+
+.whatsapp {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0 30px 0;
+}
+
+footer nav{
+    margin: 20px;
+}
+
+footer a{
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    main{
+        flex-direction: column;
+    }
+}
+
