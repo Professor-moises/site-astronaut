@@ -31,6 +31,7 @@ header{
 
 /* navegacao */
 nav a{
+    display: inline-block;
     color: #fff;
     padding: 15px;
     margin-left: 15px;
@@ -101,8 +102,20 @@ footer a{
 
 
 @media only screen and (max-width: 700px){
+    
+    header{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #logo{
+        display: block;
+    }
+
     main{
         flex-direction: column;
     }
+
+    
 }
 
